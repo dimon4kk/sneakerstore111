@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #a5a3a3;
+    background: #181818;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -69,7 +69,7 @@ header nav ul li a {
 footer {
     text-align: center;
     padding: 10px;
-    background: #506d77;
+    background: #333;
     color: white;
 }
 
@@ -256,7 +256,7 @@ header nav ul li a:hover {
 #home {
     text-align: center;
     padding: 50px 20px;
-    background: #6c757d;
+    background: #333d;
     color: white;
 }
 
@@ -537,4 +537,46 @@ header nav ul li a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #333333; /* Темно-сірий колір для всього заголовка */
+    color: #ffffff; /* Білий колір для тексту */
+    padding: 10px 20px; /* Внутрішній відступ для гарного вигляду */
+}
+
+header .logo {
+    font-size: 24px; /* Збільшений розмір тексту для логотипу */
+    font-weight: bold; /* Жирний текст */
+    text-transform: uppercase; /* Всі літери великі */
+}
+
+header nav ul {
+    list-style: none; /* Видалити маркери списку */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Розташувати елементи горизонтально */
+}
+
+header nav ul li {
+    margin-right: 20px; /* Відступ між пунктами навігації */
+}
+
+header nav ul li a {
+    color: #ffffff; /* Білий колір для посилань */
+    text-decoration: none; /* Видалити підкреслення */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Плавна зміна кольору при наведенні */
+}
+
+header nav ul li a:hover {
+    color: #758ba3; /* Сірий колір при наведенні */
 }
