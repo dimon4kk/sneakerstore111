@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик - Кросівки Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Кросівки Store</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h1>Ваш кошик</h1>
+        <div id="cartItems"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Кросівки Store. Усі права захищено.</p>
+    </footer>
+
+    <script>
+        const cartItemsContainer = document.getElementById("cartItems");
+
+        if (cart.length > 0) {
+            cartItemsContainer.innerHTML = cart.map(item => `
+                <div>
+                    <h3>${item.name}</h3>
+                    <p>Ціна: $${item.price}</p>
+                </div>
+            `).join("");
+        } else {
+            cartItemsContainer.innerHTML = "<p>Ваш кошик порожній.</p>";
+        }
+    </script>
+</body>
+</html>

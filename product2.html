@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Ultraboost</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Кросівки Store</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product-details">
+        <div class="product">
+            <img id="productImage" src="images/Adidas_Ultraboost.jpg" alt="Adidas Ultraboost">
+            <h1>Adidas Ultraboost</h1>
+            <p>Ціна: $120</p>
+            
+            <h3>Оберіть колір:</h3>
+            <div id="colorOptions">
+                <button class="color-btn" data-color="black" data-image="images/Adidas_Ultraboost_blue.jpg" style="background-color: blue;"></button>
+                <button class="color-btn" data-color="white" data-image="images/Adidas_Ultraboost_white.jpg" style="background-color: white; border: 1px solid #ccc;"></button>
+                <button class="color-btn" data-color="red" data-image="images/Adidas_Ultraboost_peartpl.jpg" style="background-color: palevioletred;"></button>
+            </div>
+    
+            <h3>Оберіть розмір:</h3>
+            <div id="sizeOptions">
+                <label><input type="radio" name="size" value="40"> 40</label>
+                <label><input type="radio" name="size" value="41"> 41</label>
+                <label><input type="radio" name="size" value="42"> 42</label>
+                <label><input type="radio" name="size" value="43"> 43</label>
+                <label><input type="radio" name="size" value="44"> 44</label>
+            </div>
+    
+            <button id="addToCart">Додати до кошика</button>
+            <a href="https://t.me/Dimon4kk" id="buyNow" target="_blank">Купити зараз</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2024 Кросівки Store. Усі права захищено.</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+/* Загальні стилі */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.product-section {
+    background: #fff;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.product-info {
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+.product-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.color-options, .size-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.color-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.color-btn:hover {
+    transform: scale(1.2);
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #495057;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+.header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.product-section {
+    padding: 20px 0;
+}
+
+.product {
+    display: flex;
+    gap: 20px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#mainImage {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+#prevImage {
+    left: -40px;
+}
+
+#nextImage {
+    right: -40px;
+}
+
+.color-options, .size-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.color-btn {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color-btn.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.product {
+    display: flex;
+    gap: 40px; /* Трохи більше відступу між фото та текстом */
+    align-items: center;
+}
+
+.product-gallery {
+    flex: 1.2; /* Ширина галереї трохи більша */
+    text-align: center;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Анімація */
+}
+
+.product-gallery img {
+    width: 450px; /* Трохи більше фото */
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-gallery.fade {
+    transform: translateX(20px); /* Ефект зсуву праворуч */
+    opacity: 0.8; /* Легка прозорість при зміні фото */
+}
+
+
+
+
+
+.color-btn {
+    outline: none; /* Вимикає стандартний фокус */
+    box-shadow: none; /* Вимикає синій обвід */
+    border: none; /* Якщо є рамка, її теж можна прибрати */
+    cursor: pointer; /* Змінює вигляд курсора */
+}
+
+.color-btn:focus {
+    outline: none; /* Забирає фокус */
+    box-shadow: none; /* Видаляє обвід */
+}
+
+
+
+
+
+
+
+
+/* Загальний стиль для блоку */
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+/* Стиль для кнопок */
+.size-btn {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.size-btn input[type="radio"] {
+    display: none; /* Ховаємо стандартний input */
+}
+
+/* Стиль для кастомної кнопки */
+.size-btn span {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* При виборі кнопки */
+.size-btn input[type="radio"]:checked + span {
+    border-color: #007BFF;
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Ефект при наведенні */
+.size-btn span:hover {
+    border-color: #007BFF;
+    color: #007BFF;
+    background-color: #eef6ff;
+}
+
+
+
+.logo-link:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+    color: #ccc; /* Світло-сірий колір */
+}
